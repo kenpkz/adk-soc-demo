@@ -1,0 +1,21 @@
+[
+    {
+        "Event ID": 4688,
+        "Timestamp": "2024-01-15 14:23:45",
+        "Process": "suspicious_invoice.exe",
+        "Parent Process": "outlook.exe",
+        "User": "WORKSTATION\\john.doe"
+    },
+    {
+        "Event ID": 5145,
+        "Timestamp": "2024-01-15 14:24:12",
+        "Share": "\\\\WORKSTATION\\C$\\Users\\john.doe\\Documents",
+        "Access": "WriteData"
+    },
+    {
+        "Event ID": 4663,
+        "Timestamp": "2024-01-15 14:24:30",
+        "Object": "C:\\Users\\john.doe\\Documents\\report.docx.encrypted",
+        "Access": "WriteData"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "Timestamp": "2024-01-15 14:24:15",
+        "Action": "File Renamed",
+        "Original": "C:\\Users\\john.doe\\Documents\\report.docx",
+        "New": "C:\\Users\\john.doe\\Documents\\report.docx.encrypted"
+    },
+    {
+        "Timestamp": "2024-01-15 14:26:30",
+        "Action": "File Created",
+        "Path": "C:\\Users\\john.doe\\Desktop\\RANSOM_NOTE.txt",
+        "Size": 1024
+    }
+]

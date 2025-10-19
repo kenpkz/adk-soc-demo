@@ -1,0 +1,3 @@
+[2024-01-15 15:30:12] ERROR: SQL syntax error near 'OR '1'='1''
+[2024-01-15 15:30:45] WARNING: Multiple NULL columns in UNION query
+[2024-01-15 15:31:20] CRITICAL: Unauthorized access to users table

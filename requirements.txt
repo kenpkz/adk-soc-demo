@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+google-generativeai
+pydantic
+python-dotenv
+websockets
+pandas
+python-json-logger
+aiohttp
+pytest
+pytest-asyncio
+google-adk

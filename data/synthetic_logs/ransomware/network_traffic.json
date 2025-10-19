@@ -1,0 +1,11 @@
+[
+    {
+        "Timestamp": "2024-01-15 14:25:00",
+        "Source IP": "192.168.1.105",
+        "Destination IP": "185.220.101.45",
+        "Port": 443,
+        "Protocol": "HTTPS",
+        "Bytes Sent": 2048,
+        "Bytes Received": 4096
+    }
+]
