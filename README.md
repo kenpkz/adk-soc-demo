@@ -34,7 +34,7 @@ The project is organized into a root agent (`ir_bot`) that coordinates a team of
     Edit the `.env` file and add your Google Cloud project details. It should look like this:
     ```
     GOOGLE_GENAI_USE_VERTEXAI=TRUE
-    GOOGLE_CLOUD_PROJECT="zken-genai"
+    GOOGLE_CLOUD_PROJECT="Your GCP Project"
     GOOGLE_CLOUD_LOCATION="global"
     GEMINI_MODEL="gemini-2.5-flash"
     ```
