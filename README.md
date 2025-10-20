@@ -12,6 +12,32 @@ The project is organized into a root agent (`ir_bot`) that coordinates a team of
 -   **`forensics_agent`**: Collects and preserves digital evidence.
 -   **`reporting_agent`**: Compiles findings into a comprehensive incident report.
 
+## System Architecture
+
+The diagram below illustrates the flow of tasks between the root `ir_bot` and its sub-agents during an incident response scenario.
+
+```mermaid
+graph TD
+    subgraph "Incident Response Workflow"
+        direction LR
+        Start((Start)) --> Prompt;
+        Prompt["User Prompt<br/>'Analyze logs...'"] --> IR_Bot;
+        IR_Bot{"ir_bot<br/>(Coordinator)"};
+        
+        subgraph "Sub-Agent Task Flow"
+            direction TB
+            IR_Bot --> Detection;
+            Detection["detection_agent<br/>(Identifies incident)"] --> Analysis;
+            Analysis["analysis_agent<br/>(Analyzes incident)"] --> Response;
+            Response["response_agent<br/>(Simulates response)"] --> Forensics;
+            Forensics["forensics_agent<br/>(Collects evidence)"] --> Reporting;
+            Reporting["reporting_agent<br/>(Generates report)"];
+        end
+
+        Reporting --> FinalReport((Final Report));
+    end
+```
+
 ## Setup and Installation
 
 1.  **Clone the repository:**
