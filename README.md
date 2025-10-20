@@ -14,28 +14,40 @@ The project is organized into a root agent (`ir_bot`) that coordinates a team of
 
 ## System Architecture
 
-The diagram below illustrates the flow of tasks between the root `ir_bot` and its sub-agents during an incident response scenario.
+The diagram below illustrates the flow of tasks between the root `ir_bot` and its sub-agents, optimized for a portrait view with a Google-inspired color theme.
 
 ```mermaid
 graph TD
-    subgraph "Incident Response Workflow"
-        direction LR
-        Start((Start)) --> Prompt;
-        Prompt["User Prompt<br/>'Analyze logs...'"] --> IR_Bot;
-        IR_Bot{"ir_bot<br/>(Coordinator)"};
-        
-        subgraph "Sub-Agent Task Flow"
-            direction TB
-            IR_Bot --> Detection;
-            Detection["detection_agent<br/>(Identifies incident)"] --> Analysis;
-            Analysis["analysis_agent<br/>(Analyzes incident)"] --> Response;
-            Response["response_agent<br/>(Simulates response)"] --> Forensics;
-            Forensics["forensics_agent<br/>(Collects evidence)"] --> Reporting;
-            Reporting["reporting_agent<br/>(Generates report)"];
-        end
+    %% Style Definitions
+    classDef googleBlue fill:#4285F4,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef googleRed fill:#DB4437,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef googleYellow fill:#F4B400,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef googleGreen fill:#0F9D58,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef startEnd fill:#eee,stroke:#333,stroke-width:2px,color:#333;
 
-        Reporting --> FinalReport((Final Report));
+    %% Graph
+    Start((Start: User Prompt)) --> IR_Bot;
+    
+    subgraph "IR-BOT Orchestration"
+        IR_Bot{"ir_bot<br/>(Coordinator)"};
+        IR_Bot --> Detection;
+        Detection["detection_agent<br/>(Identifies Incident)"] --> Analysis;
+        Analysis["analysis_agent<br/>(Analyzes Incident)"] --> Response;
+        Response["response_agent<br/>(Simulates Response)"] --> Forensics;
+        Forensics["forensics_agent<br/>(Collects Evidence)"] --> Reporting;
+        Reporting["reporting_agent<br/>(Generates Report)"] --> End;
     end
+
+    End((End: Final Report));
+
+    %% Class Assignments
+    class Start,End startEnd;
+    class IR_Bot googleBlue;
+    class Detection googleYellow;
+    class Analysis googleBlue;
+    class Response googleRed;
+    class Forensics googleGreen;
+    class Reporting googleGreen;
 ```
 
 ## Setup and Installation
