@@ -1,3 +1,8 @@
+Timestamp: 2024-01-15 15:29:50
+Query: SELECT * FROM products WHERE id='1'
+Duration: 0.025s
+Rows: 1
+
 Timestamp: 2024-01-15 15:30:12
 Query: SELECT * FROM products WHERE id='1' OR '1'='1'
 Duration: 0.045s
@@ -8,3 +13,13 @@ Query: SELECT * FROM products WHERE id='1' UNION SELECT username,password,email 
 Duration: 0.123s
 Rows: 5000
 Warning: Suspicious UNION query detected
+
+Timestamp: 2024-01-15 15:32:30
+Query: SELECT * FROM users WHERE username='admin' AND password='password123' -- (Simulated successful login)
+Duration: 0.015s
+Rows: 1
+
+Timestamp: 2024-01-15 15:33:00
+Query: SELECT * FROM admin_dashboard_data
+Duration: 0.030s
+Rows: 25

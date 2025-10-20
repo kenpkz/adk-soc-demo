@@ -1,11 +1,32 @@
 [
     {
+        "Timestamp": "2024-01-15 14:20:10",
+        "Source IP": "192.168.1.105",
+        "Destination IP": "185.220.101.45",
+        "Port": 80,
+        "Protocol": "HTTP",
+        "Bytes Sent": 512,
+        "Bytes Received": 1024,
+        "Info": "Initial contact with C2 server"
+    },
+    {
         "Timestamp": "2024-01-15 14:25:00",
         "Source IP": "192.168.1.105",
         "Destination IP": "185.220.101.45",
         "Port": 443,
         "Protocol": "HTTPS",
         "Bytes Sent": 2048,
-        "Bytes Received": 4096
+        "Bytes Received": 4096,
+        "Info": "Heartbeat and key exchange"
+    },
+    {
+        "Timestamp": "2024-01-15 14:28:00",
+        "Source IP": "192.168.1.105",
+        "Destination IP": "185.220.101.45",
+        "Port": 443,
+        "Protocol": "HTTPS",
+        "Bytes Sent": 512000,
+        "Bytes Received": 1024,
+        "Info": "Potential data exfiltration"
     }
 ]

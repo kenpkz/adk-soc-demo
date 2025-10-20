@@ -6,9 +6,27 @@
         "New": "C:\\Users\\john.doe\\Documents\\report.docx.encrypted"
     },
     {
+        "Timestamp": "2024-01-15 14:25:05",
+        "Action": "File Renamed",
+        "Original": "C:\\Users\\john.doe\\Pictures\\vacation.jpg",
+        "New": "C:\\Users\\john.doe\\Pictures\\vacation.jpg.encrypted"
+    },
+    {
+        "Timestamp": "2024-01-15 14:25:45",
+        "Action": "File Renamed",
+        "Original": "C:\\Users\\john.doe\\Documents\\financials.xlsx",
+        "New": "C:\\Users\\john.doe\\Documents\\financials.xlsx.encrypted"
+    },
+    {
         "Timestamp": "2024-01-15 14:26:30",
         "Action": "File Created",
         "Path": "C:\\Users\\john.doe\\Desktop\\RANSOM_NOTE.txt",
         "Size": 1024
+    },
+    {
+        "Timestamp": "2024-01-15 14:27:00",
+        "Action": "File Created",
+        "Path": "C:\\Users\\john.doe\\Documents\\DECRYPT_INSTRUCTIONS.html",
+        "Size": 2048
     }
 ]
