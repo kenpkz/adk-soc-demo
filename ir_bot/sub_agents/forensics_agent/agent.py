@@ -16,10 +16,11 @@ from google.adk.agents import Agent
 from google.adk.tools import google_search
 from .prompts import agent_instruction
 from ir_bot.tools.file_tools import read_local_file
+from ir_bot.tools.hash_tool import calculate_file_hash
 
 root_agent = Agent(
     model="gemini-2.5-flash",
     name="forensics_agent",
     instruction=agent_instruction,
-    tools=[read_local_file, google_search],
+    tools=[read_local_file, google_search, calculate_file_hash],
 )
