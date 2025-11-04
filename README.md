@@ -95,10 +95,10 @@ adk web
 This scenario simulates the detection and analysis of a ransomware attack on a Windows workstation.
 
 1.  In the ADK web interface, select the `ir_bot` agent from the dropdown menu.
-2.  In the chat input, enter the following prompt to start the analysis of the ransomware logs:
+2.  In the chat input, enter the following prompt to start the analysis of the ransomware logs :
 
     ```
-    Analyze the logs in the folder IR-BOT/data/synthetic_logs/ransomware
+    Analyze the logs in the folder YOUR_FOLDER_PATH/IR-BOT/data/synthetic_logs/ransomware 
     ```
 3.  The `ir_bot` will delegate the task to the `detection_agent`, which will read the logs, identify the ransomware activity, and pass its findings to the other agents for analysis, response simulation, and forensic evidence collection.
 4.  Finally, the `reporting_agent` will generate a comprehensive report summarizing the incident.
@@ -111,7 +111,7 @@ This scenario simulates the detection and analysis of a data breach caused by an
 2.  In the chat input, enter the following prompt to start the analysis of the SQL injection logs:
 
     ```
-    Analyze the logs in the folder /IR-BOT/data/synthetic_logs/sql_injection
+    Analyze the logs in the folder YOUR_FOLDER_PATH/IR-BOT/data/synthetic_logs/sql_injection
     ```
 3.  The `ir_bot` will orchestrate the workflow, starting with the `detection_agent` identifying the malicious SQL queries.
 4.  The subsequent agents will analyze the attack, suggest response actions, and collect forensic data.
